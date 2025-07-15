@@ -50,22 +50,15 @@ Testing. Hello!
 <!--  <input type="hidden" name="debugEmail" value="apabayos@deloitte.com">   -->
 <!--  ----------------------------------------------------------------------  -->
 
-Sub Type:<select  id="00N86000000XHzl" name="00N86000000XHzl" title="Sub Type"><option value="">--None--</option><option value="Lost Items">Lost Items</option>
+Report Type:<select  id="00N86000000XHzl" name="00N86000000XHzl" title="Sub Type"><option value="">--None--</option><option value="Lost Items">Lost Items</option>
 <option value="Found Items">Found Items</option>
-<option value="Feedback">Feedback</option>
-<option value="Complaint">Complaint</option>
-<option value="Suggestion">Suggestion</option>
-<option value="Amenities">Amenities</option>
-<option value="Facility Booking">Facility Booking</option>
-<option value="Confirm an Event">Confirm an Event</option>
-<option value="Parking and Directions">Parking and Directions</option>
 </select><br>
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+<label for="name">Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+<label for="phone">Contact Number</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
 Venue:<select  id="00N86000000Wuof" name="00N86000000Wuof" title="Venue"><option value="">--None--</option><option value="Car Parks">Car Parks</option>
 <option value="Climb Central">Climb Central</option>
@@ -86,6 +79,8 @@ Venue:<select  id="00N86000000Wuof" name="00N86000000Wuof" title="Venue"><option
 <option value="Visitors Centre">Visitors Centre</option>
 <option value="Water Sports Centre">Water Sports Centre</option>
 </select><br>
+
+Date &amp; Time Lost/Found:<span class="dateInput"><input  id="00N86000000XJNF" name="00N86000000XJNF" size="20" type="text" /></span><br>
 
 Area Last Seen:<select  id="00N86000000XJDZ" name="00N86000000XJDZ" title="Area Last Seen"><option value="">--None--</option><option value="Car Parks">Car Parks</option>
 <option value="Climb Central">Climb Central</option>
@@ -118,18 +113,22 @@ Item Category:<select  id="00N86000000XJGn" name="00N86000000XJGn" title="Item C
 
 <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
-<label for="description">Description</label><textarea name="description"></textarea><br>
+<label for="description">Item Description</label><textarea name="description"></textarea><br>
 
 <input type=hidden name="recordType" id="recordType" value="012860000006kOL">
-<!--<label for="recordType">Case Record Type</label><select  id="recordType" name="recordType"><option value="">--None--</option><option value="012860000006m5B">Feedback</option>
-<option value="012860000006kMj">General Enquiries</option>
-<option value="012860000006m3Z">Incident</option>
-<option value="012860000006kOL">Lost &amp; Found Items</option>
-</select><br>-->
+
+<input type=hidden name="00N86000000XJNF" id="00N86000000XJNF">
 
 <input type="submit" name="submit">
 
 </form>
+
+<script>
+// Get today's date in YYYY-MM-DD format
+const today = new Date().toISOString().split('T')[0];
+// Set the default value of the input field
+document.getElementById('00N86000000XJNF').value = today;
+</script>
 
 </body>
 </html>

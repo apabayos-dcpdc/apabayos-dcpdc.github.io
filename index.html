@@ -40,7 +40,6 @@ Testing. Hello!
 
 <form action="https://kasmcpl2025--kasmdev.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D86000001FGgb" method="POST">
 
-<input type=hidden name="recordType" id="recordType" value="012860000006kOL">
 <input type=hidden name="orgid" value="00D86000001FGgb">
 <input type=hidden name="retURL" value="http://www.google.com">
 
@@ -121,10 +120,16 @@ Item Category:<select  id="00N86000000XJGn" name="00N86000000XJGn" title="Item C
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
+<input type=hidden name="recordType" id="recordType" value="012860000006kOL">
+<!--<label for="recordType">Case Record Type</label><select  id="recordType" name="recordType"><option value="">--None--</option><option value="012860000006m5B">Feedback</option>
+<option value="012860000006kMj">General Enquiries</option>
+<option value="012860000006m3Z">Incident</option>
+<option value="012860000006kOL">Lost &amp; Found Items</option>
+</select><br>-->
+
 <input type="submit" name="submit">
 
 </form>
-
 
 </body>
 </html>

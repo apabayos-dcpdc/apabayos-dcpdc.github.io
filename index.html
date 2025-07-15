@@ -26,7 +26,7 @@ Testing. Hello!
 </script>
 <script type='text/javascript' src='https://kasmcpl2025--kasmdev.sandbox.my.site.com/ESWTestMessaging31751624481259/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 -->
-	<!--  ----------------------------------------------------------------------  -->
+<!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
@@ -40,6 +40,7 @@ Testing. Hello!
 
 <form action="https://kasmcpl2025--kasmdev.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D86000001FGgb" method="POST">
 
+<input type=hidden name="recordType" id="recordType" value="012860000006kOLAAY">
 <input type=hidden name="orgid" value="00D86000001FGgb">
 <input type=hidden name="retURL" value="http://www.google.com">
 
@@ -50,11 +51,71 @@ Testing. Hello!
 <!--  <input type="hidden" name="debugEmail" value="apabayos@deloitte.com">   -->
 <!--  ----------------------------------------------------------------------  -->
 
+Sub Type:<select  id="00N86000000XHzl" name="00N86000000XHzl" title="Sub Type"><option value="">--None--</option><option value="Lost Items">Lost Items</option>
+<option value="Found Items">Found Items</option>
+<option value="Feedback">Feedback</option>
+<option value="Complaint">Complaint</option>
+<option value="Suggestion">Suggestion</option>
+<option value="Amenities">Amenities</option>
+<option value="Facility Booking">Facility Booking</option>
+<option value="Confirm an Event">Confirm an Event</option>
+<option value="Parking and Directions">Parking and Directions</option>
+</select><br>
+
 <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
 <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+Venue:<select  id="00N86000000Wuof" name="00N86000000Wuof" title="Venue"><option value="">--None--</option><option value="Car Parks">Car Parks</option>
+<option value="Climb Central">Climb Central</option>
+<option value="Community Facilities">Community Facilities</option>
+<option value="Kallang Football Hub">Kallang Football Hub</option>
+<option value="Kallang Wave Mall">Kallang Wave Mall</option>
+<option value="Kallang Tennis Hub">Kallang Tennis Hub</option>
+<option value="National Stadium">National Stadium</option>
+<option value="OCBC Aquatic Centre">OCBC Aquatic Centre</option>
+<option value="OCBC Arena, Precinct">OCBC Arena, Precinct</option>
+<option value="Shimano Cycling World">Shimano Cycling World</option>
+<option value="Singapore Indoor Stadium">Singapore Indoor Stadium</option>
+<option value="Singapore Sports Hub">Singapore Sports Hub</option>
+<option value="Singapore Sports Museum">Singapore Sports Museum</option>
+<option value="Splash-N-Surf">Splash-N-Surf</option>
+<option value="Sports Hub Gym">Sports Hub Gym</option>
+<option value="Sports Hub Library">Sports Hub Library</option>
+<option value="Visitors Centre">Visitors Centre</option>
+<option value="Water Sports Centre">Water Sports Centre</option>
+</select><br>
+
+Area Last Seen:<select  id="00N86000000XJDZ" name="00N86000000XJDZ" title="Area Last Seen"><option value="">--None--</option><option value="Car Parks">Car Parks</option>
+<option value="Climb Central">Climb Central</option>
+<option value="Community Facilities">Community Facilities</option>
+<option value="Kallang Football Hub">Kallang Football Hub</option>
+<option value="Kallang Wave Mall">Kallang Wave Mall</option>
+<option value="Kallang Tennis Hub">Kallang Tennis Hub</option>
+<option value="National Stadium">National Stadium</option>
+<option value="OCBC Aquatic Centre">OCBC Aquatic Centre</option>
+<option value="OCBC Arena, Precinct">OCBC Arena, Precinct</option>
+<option value="Shimano Cycling World">Shimano Cycling World</option>
+<option value="Singapore Indoor Stadium">Singapore Indoor Stadium</option>
+<option value="Singapore Sports Hub">Singapore Sports Hub</option>
+<option value="Singapore Sports Museum">Singapore Sports Museum</option>
+<option value="Splash-N-Surf">Splash-N-Surf</option>
+<option value="Sports Hub Gym">Sports Hub Gym</option>
+<option value="Sports Hub Library">Sports Hub Library</option>
+<option value="Visitors Centre">Visitors Centre</option>
+<option value="Water Sports Centre">Water Sports Centre</option>
+</select><br>
+
+Item Category:<select  id="00N86000000XJGn" name="00N86000000XJGn" title="Item Category"><option value="">--None--</option><option value="Accessory">Accessory</option>
+<option value="Bag">Bag</option>
+<option value="Card">Card</option>
+<option value="Electronic Device">Electronic Device</option>
+<option value="Key">Key</option>
+<option value="Wallet">Wallet</option>
+<option value="Other">Other</option>
+</select><br>
 
 <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
@@ -63,6 +124,7 @@ Testing. Hello!
 <input type="submit" name="submit">
 
 </form>
+
 
 </body>
 </html>
